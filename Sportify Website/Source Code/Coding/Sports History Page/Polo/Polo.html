@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Polo History</title>
+  <link rel="stylesheet" href="Polo.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../../../LOGO/Sportify.png" alt="Sportify Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="../../Index.html">Home</a></li>
+        <li><a href="../../Sports Page/Sports.html">Sports</a></li>
+        <li><a href="../../GuestBook Page/GuestBook.html">Guestbook</a></li>
+        <li><a href="../../About Page/About.html">About Us</a></li>
+        <li><a href="../../Contact Page/contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <img src="Assets/Banner.png" alt="Polo Banner" class="banner" style="width: 99vw;">
+
+  <!-- History -->
+  <section class="history-section">
+    <h2>Our History</h2>
+    <p>
+      Polo is one of the world’s oldest known team sports, originating in ancient Persia over 2,000 years ago. It began as a training game for cavalry units and evolved into a royal pastime. Over centuries, it spread to India, China, and beyond.
+      <br><br>
+      The modern version of the game was shaped in British India during the 19th century, and today, polo is a global sport known for its speed, precision, and elegance, played on horseback with four players per team.
+    </p>
+  </section>
+
+  <!-- Formats -->
+  <section class="history-section">
+    <h2>Popular Formats of Polo</h2>
+    <div class="formats">
+      <div class="format-box">
+        <h3>Field Polo</h3>
+        <p>The most traditional form played on a large grass field with four players per team.</p>
+      </div>
+      <div class="format-box">
+        <h3>Arena Polo</h3>
+        <p>Played indoors or on smaller outdoor fields with three players per team; faster-paced with boards around the arena.</p>
+      </div>
+      <div class="format-box">
+        <h3>Snow Polo</h3>
+        <p>A winter variant played on snow-covered fields, often in luxurious alpine destinations like St. Moritz.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Famous Players -->
+  <section class="history-section">
+    <h2>Famous Polo Players</h2>
+    <div class="player-grid">
+      <div class="player-card" onclick="showDetails('Adolfo Cambiaso', 'Adolfo Cambiaso, born in Argentina in 1975, is considered the greatest polo player of modern times. He reached a 10-goal handicap at the young age of 17 and has maintained it for over two decades. Cambiaso is the founder of the famous La Dolfina Polo Team, which has won numerous Argentine Open championships. Known for his strategic mind, powerful play, and dedication to horse breeding and cloning, Cambiaso has revolutionized polo both on and off the field.')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb91mnbvTSUgjakN4K3PkwYNNA6Hm43GKJYA&s" alt="Adolfo Cambiaso">
+        <h3>Adolfo Cambiaso</h3>
+      </div>
+
+      <div class="player-card" onclick="showDetails('Facundo Pieres', 'Facundo Pieres, born in 1986 in Argentina, is one of the top-rated polo players in the world with a 10-goal handicap. A member of the legendary Pieres polo family, Facundo is known for his elegant riding, quick decision-making, and strong leadership. He has played for Ellerstina Polo Team and has won many prestigious tournaments including the Argentine Open, the US Open, and British Gold Cup. His rivalry with Adolfo Cambiaso is one of the most talked-about in modern polo.')">
+        <img src="https://www.worldpolotour.com/images/player/36-facupieres.jpg" alt="Facundo Pieres">
+        <h3>Facundo Pieres</h3>
+      </div>
+
+      <div class="player-card" onclick="showDetails('Gonzalo Pieres Jr.', 'Gonzalo Pieres Jr., also from the famous Pieres family, was born in 1982 in Argentina. He is a consistent 10-goal player and a key member of the Ellerstina team alongside his brothers. Known for his calm demeanor and powerful hitting, Gonzalo has won the Argentine Triple Crown and several international championships. He carries forward the legacy of his father, Gonzalo Pieres Sr., one of the greatest players in polo history.')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVshBkwaCcod-RfwmtkWZp_JnlRp1aOH-vdQ&s" alt="Gonzalo Pieres Jr.">
+        <h3>Gonzalo Pieres Jr.</h3>
+      </div>
+
+      <div class="player-card" onclick="showDetails('Eduardo Novillo Astrada', 'Eduardo Edu Astrada, born in 1974 in Argentina, is a former 10-goal polo player known for his strength, control, and aggressive play style. A member of the traditional La Aguada Polo Team, Astrada has won major tournaments including the Argentine Open. He is also recognized for his leadership, having served as captain for several professional teams. Off the field, Eduardo comes from a family deeply rooted in polo culture and tradition.')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWOUdzme5afx1kiFr5Z6N1lJssff0RZuqpFA&s" alt="Eduardo Astrada">
+        <h3>Eduardo Astrada</h3>
+      </div>
+
+      <div class="player-card" onclick="showDetails('David Stirling', 'David Stirling, also known as Pelon, was born in Uruguay in 1981 and is one of the highest-rated non-Argentine polo players in history. He holds a 10-goal handicap and is a crucial member of the La Dolfina Polo Team alongside Adolfo Cambiaso. Stirling is celebrated for his speed, endurance, and ability to read the game with precision. He has won multiple Argentine Open titles and is a respected figure in international polo.')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9ObgSxG8d3NRNC4f79W0TAkFHbbx3iZ7crA&s" alt="David Stirling">
+        <h3>David Stirling</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="playerModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modalText"></div>
+    </div>
+  </div>
+
+  <!-- Top Teams -->
+  <section class="history-section">
+    <h2>Top Polo Nations</h2>
+    <table class="ranking-table">
+      <tr>
+        <th>Rank</th>
+        <th>Country</th>
+        <th>Top Players</th>
+      </tr>
+      <tr><td>1</td><td>Argentina</td><td>Adolfo Cambiaso, Facundo Pieres</td></tr>
+      <tr><td>2</td><td>United Kingdom</td><td>James Beim, Max Charlton</td></tr>
+      <tr><td>3</td><td>United States</td><td>Nic Roldan, Jeff Hall</td></tr>
+      <tr><td>4</td><td>Uruguay</td><td>David Stirling</td></tr>
+      <tr><td>5</td><td>Brazil</td><td>João Paulo Ganon</td></tr>
+    </table>
+  </section>
+
+  <!-- Top Players -->
+  <section class="history-section">
+    <h2>Top Polo Players (Handicap Ratings)</h2>
+    <table class="ranking-table">
+      <tr>
+        <th>Rank</th>
+        <th>Player</th>
+        <th>Country</th>
+        <th>Handicap</th>
+      </tr>
+      <tr><td>1</td><td>Adolfo Cambiaso</td><td>Argentina</td><td>10</td></tr>
+      <tr><td>2</td><td>Facundo Pieres</td><td>Argentina</td><td>10</td></tr>
+      <tr><td>3</td><td>Gonzalo Pieres Jr.</td><td>Argentina</td><td>9</td></tr>
+      <tr><td>4</td><td>David Stirling</td><td>Uruguay</td><td>9</td></tr>
+      <tr><td>5</td><td>Eduardo Novillo Astrada</td><td>Argentina</td><td>8</td></tr>
+    </table>
+  </section>
+
+  <!-- Interesting Facts -->
+<section class="history-section">
+  <h2>Interesting Facts About Polo</h2>
+  <ul class="facts-list">
+    <li>Polo is one of the oldest known team sports, with origins over 2,000 years ago in ancient Persia.</li>
+    <li>It was used as cavalry training for warriors and sometimes involved over 100 players per side.</li>
+    <li>The modern version of polo was developed in India and formalized by the British in the 19th century.</li>
+    <li>Polo is often referred to as the "Sport of Kings" and has been played by royalty around the world.</li>
+    <li>There are variations of polo played on snow, camels, and even elephants in some countries.</li>
+  </ul>
+</section>
+
+<!-- Conclusion Image Placeholder -->
+  <section class="history-section">
+    <img src="Assets/Conclusion.png" alt="Conclusion" class="conclusion-img">
+  </section>
+
+
+  <footer class="footer">
+    &copy; 2025 Sportify Inc. | All Rights Reserved
+  </footer>
+
+  <script src="Polo.js"></script>
+</body>
+</html>

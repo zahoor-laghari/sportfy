@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ice Hockey History</title>
+  <link rel="stylesheet" href="icehockey.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../../../LOGO/Sportify.png" alt="Sportify Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="../../Index.html">Home</a></li>
+        <li><a href="../../Sports Page/Sports.html">Sports</a></li>
+        <li><a href="../../GuestBook Page/GuestBook.html">Guestbook</a></li>
+        <li><a href="../../About Page/About.html">About Us</a></li>
+        <li><a href="../../Contact Page/contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <img src="Assets/banner.png" alt="Ice Hockey Banner" class="banner" style="width: 99vw;">
+
+  <!-- History -->
+  <section class="history-section">
+    <h2>Our History</h2>
+    <p>
+      Ice hockey is a fast-paced team sport played on ice. Originating in Canada in the 19th century, it is especially popular in countries like Canada, the USA, Russia, Sweden, and Finland.
+      <br><br>
+      Played with six players per team including a goaltender, the aim is to score goals with a puck using sticks. Known for speed and intensity, ice hockey has grown into one of the most exciting winter sports globally.
+    </p>
+  </section>
+
+  <!-- Formats -->
+  <section class="history-section">
+    <h2>Three Major Formats of Game</h2>
+    <div class="formats">
+      <div class="format-box">
+        <h3>National Hockey League (NHL)</h3>
+        <p>The top professional league, mainly in the US and Canada. Teams compete in a long season followed by playoffs for the Stanley Cup.</p>
+      </div>
+      <div class="format-box">
+        <h3>International Ice Hockey Federation (IIHF)</h3>
+        <p>Governs events like the World Championship and Olympics, featuring national teams from across the globe.</p>
+      </div>
+      <div class="format-box">
+        <h3>Winter Olympics</h3>
+        <p>Every four years, national teams compete for gold. It’s one of the most viewed and awaited ice hockey tournaments worldwide.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Famous Players -->
+  <section class="history-section">
+    <h2>Famous Ice Hockey Players</h2>
+    <div class="player-grid">
+      <div class="player-card" onclick="showDetails('Wayne Gretzky', 'Wayne Gretzky, born in 1961 in Brantford, Ontario, Canada, is widely regarded as the greatest ice hockey player of all time. Known as The Great One, he holds the record for most goals, assists, and points in NHL history. Gretzky played 20 seasons in the NHL with teams like the Edmonton Oilers, Los Angeles Kings, and New York Rangers. He won four Stanley Cups and earned nine Hart Trophies as the leagues Most Valuable Player. His vision, intelligence, and playmaking changed the way hockey is played forever.')">
+        <img src="https://mrbusinessmagazine.com/wp-content/uploads/2024/08/1.4-Source-www.quora_.com_.jpg" alt="Wayne Gretzky">
+        <h3>Wayne Gretzky</h3>
+      </div>
+      <div class="player-card" onclick="showDetails('Sidney Crosby', 'Sidney Crosby, born in 1987 in Cole Harbour, Nova Scotia, Canada, is one of the most accomplished players of the modern era. Nicknamed Sid the Kid, he was drafted first overall by the Pittsburgh Penguins in 2005 and led them to three Stanley Cup championships. Crosby has won multiple MVP awards and Olympic gold medals with Team Canada. Known for his leadership, work ethic, and two-way play, he continues to be a dominant force in the NHL and a role model for young players.')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfSspPFDYCkG7t6TQR69TmzGIztvHgEFA85g&s" alt="Sidney Crosby">
+        <h3>Sidney Crosby</h3>
+      </div>
+      <div class="player-card" onclick="showDetails('Alexander Ovechkin', 'Alexander Ovechkin, born in 1985 in Moscow, Russia, is one of the greatest goal-scorers in ice hockey history. Playing for the Washington Capitals, he became known for his powerful one-timer shots and aggressive play style. Ovechkin led the Capitals to their first Stanley Cup in 2018 and has won the Rocket Richard Trophy multiple times for most goals in a season. He is closing in on Wayne Gretzky’s all-time goals record and remains a feared offensive threat on the ice.')">
+        <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nhl/players/full/3101.png" alt="Ovechkin">
+        <h3>Alexander Ovechkin</h3>
+      </div>
+      <div class="player-card" onclick="showDetails('Connor McDavid', 'Connor McDavid, born in 1997 in Richmond Hill, Ontario, Canada, is considered the most talented player of the current generation. Drafted first overall by the Edmonton Oilers in 2015, he quickly became known for his speed, stick-handling, and vision. McDavid has won multiple Art Ross and Hart Trophies, regularly leading the league in scoring. Often compared to Wayne Gretzky for his playmaking ability, McDavid is expected to dominate the sport for years to come.')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCOoZAaUhkxsaPGbIj6ODpnF9rPt516MinVQ&s" alt="Connor McDavid">
+        <h3>Connor McDavid</h3>
+      </div>
+      <div class="player-card" onclick="showDetails('Henrik Lundqvist', 'Henrik Lundqvist, born in 1982 in Åre, Sweden, is one of the greatest goaltenders in ice hockey history. He played his entire NHL career with the New York Rangers and was known as King Henrik. Lundqvist won the Vezina Trophy in 2012 as the league’s best goalie and helped Sweden win an Olympic gold medal in 2006. Renowned for his reflexes, consistency, and calm presence under pressure, he retired with over 450 career wins and remains a fan favorite worldwide.')">
+        <img src="https://www.hockeydb.com/ihdb/photos/henrik-lundqvist-2020-48.jpg" alt="Henrik Lundqvist">
+        <h3>Henrik Lundqvist</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="playerModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modalText"></div>
+    </div>
+  </div>
+
+  <!-- Current Rankings -->
+  <section class="history-section">
+    <h2>Top National Teams</h2>
+    <table class="ranking-table">
+      <tr>
+        <th>Rank</th>
+        <th>Team</th>
+        <th>Points</th>
+      </tr>
+      <tr><td>1</td><td>Canada</td><td>3300</td></tr>
+      <tr><td>2</td><td>Finland</td><td>3200</td></tr>
+      <tr><td>3</td><td>USA</td><td>3100</td></tr>
+      <tr><td>4</td><td>Sweden</td><td>3050</td></tr>
+      <tr><td>5</td><td>Russia</td><td>2990</td></tr>
+    </table>
+  </section>
+
+  <!-- Top Players -->
+  <section class="history-section">
+    <h2>Top Players</h2>
+    <table class="ranking-table">
+      <tr>
+        <th>Rank</th>
+        <th>Player</th>
+        <th>Country</th>
+        <th>Points</th>
+      </tr>
+      <tr><td>1</td><td>Connor McDavid</td><td>Canada</td><td>950</td></tr>
+      <tr><td>2</td><td>Leon Draisaitl</td><td>Germany</td><td>900</td></tr>
+      <tr><td>3</td><td>Nathan MacKinnon</td><td>Canada</td><td>880</td></tr>
+      <tr><td>4</td><td>Auston Matthews</td><td>USA</td><td>865</td></tr>
+      <tr><td>5</td><td>Cale Makar</td><td>Canada</td><td>850</td></tr>
+    </table>
+  </section>
+
+  <!-- Interesting Facts -->
+  <section class="history-section">
+    <h2>Interesting Facts About Ice Hockey</h2>
+    <ul class="facts-list">
+      <li>The Stanley Cup is over 130 years old and passed to each year’s winning team.</li>
+      <li>Wayne Gretzky holds more assists than anyone else has total points.</li>
+      <li>Pucks can travel faster than 100 mph.</li>
+      <li>The NHL was founded in 1917 with just 4 teams.</li>
+      <li>Ice Hockey was added to the Olympics in 1924.</li>
+    </ul>
+  </section>
+
+  <!-- Conclusion Image Placeholder -->
+  <section class="history-section">
+    <img src="Assets/Conclusion.png" alt="Conclusion" class="conclusion-img">
+  </section>
+
+  <div class="footer">
+    <p>&copy; 2025 Sportify. All rights reserved.</p>
+  </div>
+
+  <script src="icehockey.js"></script>
+</body>
+</html>
+
+

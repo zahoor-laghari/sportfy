@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Badminton History</title>
+  <link rel="stylesheet" href="badminton.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../../../LOGO/Sportify.png" alt="Sportify Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="../../Index.html">Home</a></li>
+        <li><a href="../../Sports Page/Sports.html">Sports</a></li>
+        <li><a href="../../GuestBook Page/GuestBook.html">Guestbook</a></li>
+        <li><a href="../../About Page/About.html">About Us</a></li>
+        <li><a href="../../Contact Page/contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <img src="Assets/banner.png" alt="Badminton Banner" class="banner" style="width: 99vw;">
+
+  <!-- History -->
+  <section class="history-section">
+    <h2>Our History</h2>
+    <p>
+      Badminton originated in British India during the mid-19th century and quickly became a popular sport worldwide. Played using racquets and a shuttlecock, it is a fast-paced game that demands agility, speed, and precision.
+      <br><br>
+      Matches are usually played indoors between singles or doubles, and players score by landing the shuttlecock in the opponent's court. Badminton is now a popular Olympic sport and has major followings in countries like China, Indonesia, India, Denmark, and South Korea.
+    </p>
+  </section>
+
+  <!-- Formats -->
+  <section class="history-section">
+    <h2>Major Event Categories</h2>
+    <div class="formats">
+      <div class="format-box">
+        <h3>Singles</h3>
+        <p>One-on-one matches that require incredible stamina and individual skill.</p>
+      </div>
+      <div class="format-box">
+        <h3>Doubles</h3>
+        <p>Played with two players per side, demanding coordination and quick reflexes.</p>
+      </div>
+      <div class="format-box">
+        <h3>Mixed Doubles</h3>
+        <p>Teams composed of one male and one female player per side, testing teamwork and balance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Famous Players -->
+  <section class="history-section">
+    <h2>Famous Badminton Players</h2>
+    <div class="player-grid">
+      <div class="player-card" onclick="showDetails('Lin Dan', 'Lin Dan, born on October 14, 1983, in Fujian, China, is regarded as the greatest badminton player ever. A two-time Olympic champion and five-time World Champion, Lin was known for his powerful smashes, agility, and tactical brilliance. Nicknamed Super Dan, he dominated the sport for more than a decade.')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl5t1rRNJecT9Z8b5kbEwCW9iQoS7nkyo1BA&s" alt="Lin Dan">
+        <h3>Lin Dan</h3>
+      </div>
+      <div class="player-card" onclick="showDetails('PV Sindhu', 'Pusarla Venkata Sindhu, born on July 5, 1995, in Hyderabad, India, is one of the most successful Indian shuttlers. She won a silver medal at the 2016 Rio Olympics and a bronze at Tokyo 2020. In 2019, she became the first Indian to win the BWF World Championships.')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS-y5c3qJjWkxl7gQeFZ9WWgNmIJONGkziIw&s" alt="PV Sindhu">
+        <h3>PV Sindhu</h3>
+      </div>
+      <div class="player-card" onclick="showDetails('Kento Momota', 'Kento Momota, born on September 1, 1994, in Mino, Japan, is known for his smooth playing style and consistency. He won the World Championships in 2018 and 2019 and held the World No. 1 ranking for several years.')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn1OnfPflre7Irt5ADXp85Q-wTmTBrgSsU8A&s" alt="Kento Momota">
+        <h3>Kento Momota</h3>
+      </div>
+      <div class="player-card" onclick="showDetails('Tai Tzu-Ying', 'Tai Tzu-Ying, born on June 20, 1994, in Kaohsiung, Taiwan, is renowned for her deception and wristy style. She held the World No. 1 spot in women\'s singles for over 200 weeks, a record. Tai has won numerous Super Series titles across her career.')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGbcXl-cjxWYd7-eiUb2qet_c22CNXyWMDRA&s" alt="Tai Tzu-Ying">
+        <h3>Tai Tzu-Ying</h3>
+      </div>
+      <div class="player-card" onclick="showDetails('Lee Chong Wei', 'Lee Chong Wei, born on October 21, 1982, in Perak, Malaysia, is one of badminton’s most consistent performers. He was ranked World No. 1 for 349 weeks. Though he never won Olympic gold, he earned three silver medals and was a national hero in Malaysia.')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSITG7LbPaIHfjDYGLAw-oRQJWqqzKC2GKwdQ&s" alt="Lee Chong Wei">
+        <h3>Lee Chong Wei</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="playerModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modalText"></div>
+    </div>
+  </div>
+
+  <!-- Top National Teams -->
+  <section class="history-section">
+    <h2>Top National Teams</h2>
+    <table class="ranking-table">
+      <tr>
+        <th>Rank</th>
+        <th>Country</th>
+        <th>Points</th>
+      </tr>
+      <tr><td>1</td><td>China</td><td>350</td></tr>
+      <tr><td>2</td><td>Japan</td><td>330</td></tr>
+      <tr><td>3</td><td>Indonesia</td><td>320</td></tr>
+      <tr><td>4</td><td>India</td><td>310</td></tr>
+      <tr><td>5</td><td>Denmark</td><td>300</td></tr>
+    </table>
+  </section>
+
+  <!-- Top Players -->
+  <section class="history-section">
+    <h2>Top Players</h2>
+    <table class="ranking-table">
+      <tr>
+        <th>Rank</th>
+        <th>Player</th>
+        <th>Country</th>
+        <th>Points</th>
+      </tr>
+      <tr><td>1</td><td>Viktor Axelsen</td><td>Denmark</td><td>980</td></tr>
+      <tr><td>2</td><td>Kento Momota</td><td>Japan</td><td>950</td></tr>
+      <tr><td>3</td><td>Anthony Ginting</td><td>Indonesia</td><td>940</td></tr>
+      <tr><td>4</td><td>HS Prannoy</td><td>India</td><td>910</td></tr>
+      <tr><td>5</td><td>Shi Yuqi</td><td>China</td><td>905</td></tr>
+    </table>
+  </section>
+
+  <!-- Interesting Facts -->
+  <section class="history-section">
+    <h2>Interesting Facts About Badminton</h2>
+    <ul class="facts-list">
+      <li>The fastest recorded badminton smash was 426 km/h by Fu Haifeng.</li>
+      <li>Badminton has been an Olympic sport since 1992.</li>
+      <li>Shuttlecocks are traditionally made from goose feathers.</li>
+      <li>Matches are played up to 21 points per game, best of 3 games.</li>
+      <li>China has won the most Olympic gold medals in badminton.</li>
+    </ul>
+  </section>
+
+  <!-- Conclusion -->
+  <section class="history-section">
+    <img src="Assets/conclusion.png" alt="Conclusion" class="conclusion-img">
+  </section>
+
+  <div class="footer">
+    <p>&copy; 2025 Sportify. All rights reserved.</p>
+  </div>
+
+  <script src="badminton.js"></script>
+</body>
+</html>

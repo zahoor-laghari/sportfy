@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Baseball History</title>
+  <link rel="stylesheet" href="baseball.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../../../LOGO/Sportify.png" alt="Sportify Logo" style="height: 50px;">
+      </div>
+      <ul class="nav-links">
+        <li><a href="../../Index.html">Home</a></li>
+        <li><a href="../../Sports Page/Sports.html">Sports</a></li>
+        <li><a href="../../GuestBook Page/GuestBook.html">Guestbook</a></li>
+        <li><a href="../../About Page/About.html">About Us</a></li>
+        <li><a href="../../Contact Page/contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <img src="Assets/Banner.png" alt="Baseball Banner" class="banner" style="width: 99vw;">
+
+  <!-- History -->
+  <section class="history-section">
+    <h2>Our History</h2>
+    <p>
+      Baseball is a bat-and-ball game that originated in the United States in the 18th century. The modern form of the game evolved in the mid-19th century and became the national pastime of America.
+      <br><br>
+      Played between two teams of nine players each, the goal is to score runs by hitting a ball and running through bases arranged in a diamond. The game is rich in tradition, with a major cultural impact across the Americas and East Asia.
+    </p>
+  </section>
+
+  <!-- Formats -->
+  <section class="history-section">
+    <h2>Popular Formats of Baseball</h2>
+    <div class="formats">
+      <div class="format-box">
+        <h3>Major League Baseball (MLB)</h3>
+        <p>The premier professional league in the USA, featuring top teams like the Yankees and Dodgers.</p>
+      </div>
+      <div class="format-box">
+        <h3>Nippon Professional Baseball (NPB)</h3>
+        <p>Japan's top baseball league, known for its passionate fans and high-level play.</p>
+      </div>
+      <div class="format-box">
+        <h3>World Baseball Classic (WBC)</h3>
+        <p>International competition featuring national teams from around the world.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Famous Players -->
+  <section class="history-section">
+    <h2>Famous Baseball Players</h2>
+    <div class="player-grid">
+      <div class="player-card" onclick="showDetails('Babe Ruth', 'Babe Ruth, born in 1895 in Baltimore, Maryland, is one of the most iconic figures in the history of baseball. Known as The Sultan of Swat, he revolutionized the sport with his incredible power hitting. Ruth began his career as a pitcher with the Boston Red Sox but achieved legendary status as a slugging outfielder for the New York Yankees. He hit 714 career home runs, a record that stood for decades. His larger-than-life personality and impact on the games popularity made him a true American sports legend.')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6C2wTlyUeTVE_3RdXTLGGcBG-hrQpFsTGFQ&s" alt="Babe Ruth">
+        <h3>Babe Ruth</h3>
+      </div>
+
+      <div class="player-card" onclick="showDetails('Jackie Robinson', 'Jackie Robinson, born in 1919 in Cairo, Georgia, broke Major League Baseball’s color barrier in 1947 when he debuted with the Brooklyn Dodgers. As the first African American to play in the MLB in the modern era, Robinson faced racism with courage and dignity. He was an outstanding player, winning the National League MVP award in 1949 and helping the Dodgers win the World Series in 1955. Off the field, Robinson was a civil rights icon whose legacy continues to inspire generations.')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa07da2U0TDNHq0Y_RYBqWYtLWNGyyCuCzqA&s" alt="Jackie Robinson">
+        <h3>Jackie Robinson</h3>
+      </div>
+
+      <div class="player-card" onclick="showDetails('Shohei Ohtani', 'Shohei Ohtani, born in 1994 in Oshu, Japan, is one of the most unique and exciting players in baseball history. Playing for the Los Angeles Angels, Ohtani is a rare two-way player — both a powerful hitter and a dominant pitcher. He won the American League MVP award in 2021 and has drawn comparisons to Babe Ruth for his unprecedented abilities on both sides of the game. His global appeal and humble personality have made him a superstar both in Japan and internationally.')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkb_R_xhzxhfqQRk9H9h74i3cVA73NJk2FVQ&s" alt="Ohtani">
+        <h3>Shohei Ohtani</h3>
+      </div>
+      
+      <div class="player-card" onclick="showDetails('Derek Jeter', 'Derek Jeter, born in 1974 in Pequannock, New Jersey, was the longtime captain and shortstop for the New York Yankees. He played his entire 20-year career with the team, winning five World Series championships. Known for his clutch performances, leadership, and professionalism, Jeter finished his career with over 3,000 hits and is widely regarded as one of the greatest Yankees of all time. He was inducted into the Baseball Hall of Fame in 2020 with near-unanimous support.')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoPpd8AO2uBuIfoiBtt1MKlN0jVp3voCZ1sQ&s" alt="Derek Jeter">
+        <h3>Derek Jeter</h3>
+      </div>
+
+      <div class="player-card" onclick="showDetails('Mike Trout', 'Mike Trout, born in 1991 in Vineland, New Jersey, is considered one of the most talented players of the modern era. Playing for the Los Angeles Angels, Trout has won multiple MVP awards and is known for his all-around excellence — hitting, fielding, and base running. He consistently ranks among the league leaders in home runs and on-base percentage. Despite limited postseason success, his consistency and humble demeanor have made him a fan favorite and a model of excellence in Major League Baseball.')">
+        <img src="https://dims.apnews.com/dims4/default/a27617c/2147483647/strip/true/crop/3000x4499+0+0/resize/399x599!/quality/90/?url=https%3A%2F%2Fstorage.googleapis.com%2Fafs-prod%2Fmedia%2F7ea4aa2a3ce74f0f945a99106e41944c%2F3000.jpeg" alt="Mike Trout">
+        <h3>Mike Trout</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="playerModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modalText"></div>
+    </div>
+  </div>
+
+  <!-- Top Teams -->
+  <section class="history-section">
+    <h2>Top National Teams</h2>
+    <table class="ranking-table">
+      <tr>
+        <th>Rank</th>
+        <th>Team</th>
+        <th>WBSC Points</th>
+      </tr>
+      <tr><td>1</td><td>Japan</td><td>5867</td></tr>
+      <tr><td>2</td><td>USA</td><td>4372</td></tr>
+      <tr><td>3</td><td>Mexico</td><td>4403</td></tr>
+      <tr><td>4</td><td>South Korea</td><td>4132</td></tr>
+      <tr><td>5</td><td>Chinese Taipei</td><td>3775</td></tr>
+    </table>
+  </section>
+
+  <!-- Top Players -->
+  <section class="history-section">
+    <h2>Top Baseball Players (Current)</h2>
+    <table class="ranking-table">
+      <tr>
+        <th>Rank</th>
+        <th>Player</th>
+        <th>Country</th>
+        <th>Achievements</th>
+      </tr>
+      <tr><td>1</td><td>Shohei Ohtani</td><td>Japan</td><td>MVP, All-Star, Two-Way Phenom</td></tr>
+      <tr><td>2</td><td>Aaron Judge</td><td>USA</td><td>Home Run Leader, AL MVP</td></tr>
+      <tr><td>3</td><td>Ronald Acuña Jr.</td><td>Venezuela</td><td>30/60 Club, NL MVP</td></tr>
+      <tr><td>4</td><td>Mookie Betts</td><td>USA</td><td>World Series Champion</td></tr>
+      <tr><td>5</td><td>Juan Soto</td><td>Dominican Republic</td><td>World Series Winner, Batting Champ</td></tr>
+    </table>
+  </section>
+
+<!-- Interesting Facts -->
+<section class="history-section">
+  <h2>Interesting Facts About Baseball</h2>
+  <ul class="facts-list">
+    <li>Baseball originated in the United States in the 18th century and became the national pastime by the 19th century.</li>
+    <li>The first officially recorded baseball game took place in 1846 in Hoboken, New Jersey.</li>
+    <li>Major League Baseball (MLB) was established in 1903 and is now one of the most popular sports leagues globally.</li>
+    <li>Babe Ruth, one of the greatest players in history, hit 714 career home runs.</li>
+    <li>The longest professional baseball game lasted 33 innings and over 8 hours of play.</li>
+  </ul>
+</section>
+
+<!-- Conclusion Image Placeholder -->
+  <section class="history-section">
+    <img src="Assets/conclusion.png" alt="Conclusion" class="conclusion-img">
+  </section>
+
+
+<footer>
+    &copy; 2025 Sportify Inc. | All Rights Reserved
+</footer>
+
+
+<script src="BaseBall.js"></script>
+</body>
+</html>

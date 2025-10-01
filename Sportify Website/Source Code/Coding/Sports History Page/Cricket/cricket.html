@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cricket History</title>
+  <link rel="stylesheet" href="cricket.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../../../LOGO/Sportify.png" alt="Sportify Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="../../Index.html">Home</a></li>
+        <li><a href="../../Sports Page/Sports.html">Sports</a></li>
+        <li><a href="../../GuestBook Page/GuestBook.html">Guestbook</a></li>
+        <li><a href="../../About Page/About.html">About Us</a></li>
+        <li><a href="../../Contact Page/contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <img src="assets/banner.png" alt="Cricket Banner" class="banner" style="width: 99vw;">
+
+  <!-- History -->
+  <section class="history-section">
+    <h2>Our History</h2>
+    <p>
+      Cricket is a bat-and-ball sport between two teams of eleven players each. It originated in England and is now one of the most popular sports in the world, especially in countries like Pakistan, India, Australia, England, South Africa, and Sri Lanka. The game is known for its spirit, strategy, and the unique balance between batting and bowling skills.
+      <br><br>
+      The playing field is oval-shaped with a rectangular 22-yard pitch in the center. Each team takes turns to bat and bowl. The batting team tries to score as many runs as possible while the bowling and fielding side tries to dismiss the batsmen. The team with the most runs at the end of the match wins.
+    </p>
+  </section>
+
+  <!-- Formats -->
+  <section class="history-section">
+    <h2>Three Major Formats of Game</h2>
+    <div class="formats">
+      <div class="format-box">
+        <h3>Test Cricket</h3>
+        <p>The longest format of the game, played over five days with unlimited overs and two innings per team.</p>
+      </div>
+      <div class="format-box">
+        <h3>One Day Internationals (ODI)</h3>
+        <p>A 50-over per side format known for its balance between strategy and pace, usually completed in one day.</p>
+      </div>
+      <div class="format-box">
+        <h3>Twenty20 (T20)</h3>
+        <p>The shortest and most thrilling format, where each team plays 20 overs, emphasizing fast-paced action.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Famous Players -->
+  <section class="history-section">
+    <h2>Famous Cricket Players</h2>
+    <div class="player-grid">
+      <div class="player-card" onclick="showDetails('Sachin Tendulkar', 'Sachin Tendulkar, born on April 24, 1973, in Mumbai, is one of the greatest cricketers in history. Known as the Little Master, he made his debut for India at the young age of 16 in 1989. He became the highest run-scorer in both Test and One Day Internationals. Tendulkar is the first player to score 100 international centuries. He won the ICC Cricket World Cup with India in 2011. Sachin retired from international cricket in 2013 after a legendary 24-year career.')">
+        <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/316400/316486.6.png" alt="Sachin">
+        <h3>Sachin Tendulkar</h3>
+      </div>
+      <div class="player-card" onclick="showDetails('Virat Kohli', 'Virat Kohli, born on November 5, 1988, in Delhi, India, is one of the modern greats of cricket. A modern-day legend with an aggressive batting style, he made his debut for the Indian national team in 2008. Kohli quickly rose to become one of the world top batsmen and has scored over 70 international centuries. He also served as the captain of the Indian team in all formats, leading India to many memorable victories. Known as the Run Machine, his consistency and passion have made him a fan favorite across the globe.')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIsZQYnc8FWICGpUA-2E62ED8bq35p0I7ErQ&s" alt="Virat">
+        <h3>Virat Kohli</h3>
+      </div>
+      <div class="player-card" onclick="showDetails('Babar Azam', 'Babar Azam, born on October 15, 1994, in Lahore, is one of Pakistan’s finest modern-day cricketers. An elegant Pakistani batsman known for consistency, he made his international debut in 2015. Babar quickly rose through the ranks to become Pakistan’s leading batter across all formats. He is among the fastest players to reach key milestones in ODIs and T20Is, and has scored centuries in all three formats. Babar also captained Pakistan in all formats, leading the team to the No. 1 ODI ranking. Though he stepped down from captaincy in 2024 to focus on his batting, he remains a key figure in world cricket.')">
+        <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/320400/320448.1.png" alt="Babar">
+        <h3>Babar Azam</h3>
+      </div>
+      <div class="player-card" onclick="showDetails('MS Dhoni', 'MS Dhoni, born on July 7, 1981, in Ranchi, India, is one of the most successful and iconic captains in cricket history. Known as Captain Cool, he made his international debut in 2004 and earned a reputation for his calm demeanor and sharp leadership. Dhoni is the only captain to have won all major ICC trophies for India—the 2007 ICC T20 World Cup, the 2011 ICC Cricket World Cup, and the 2013 ICC Champions Trophy. He is also widely regarded as one of the greatest finishers in limited-overs cricket. A brilliant wicketkeeper and tactician, Dhoni retired from international cricket in 2020 but continues to lead Chennai Super Kings in the Indian Premier League, where he remains a beloved figure.')">
+        <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/319900/319946.3.png" alt="Dhoni">
+        <h3>MS Dhoni</h3>
+      </div>
+      <div class="player-card" onclick="showDetails('Kane Williamson', 'NKane Williamson, born on August 8, 1990, in Tauranga, New Zealand, is one of the most technically gifted and respected cricketers of the modern era. A New Zealand captain known for calm leadership and exquisite technique, he made his international debut in 2010. Williamson has been the backbone of New Zealands batting across all formats and is widely admired for his sportsmanship and leadership qualities. As captain, he led New Zealand to the final of the 2019 ICC Cricket World Cup and guided them to victory in the inaugural ICC World Test Championship in 2021. A consistent performer and humble leader, Kane Williamson is celebrated for his class both on and off the field.')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxpM-o1rc7j06q_yeFR_r6np9nyqWyGNlnIw&s" alt="Kane">
+        <h3>Kane Williamson</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="playerModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modalText"></div>
+    </div>
+  </div>
+
+  <!-- Current Rankings -->
+  <section class="history-section">
+    <h2>Top National Teams</h2>
+    <table class="ranking-table">
+      <tr>
+        <th>Rank</th>
+        <th>Team</th>
+        <th>Points</th>
+      </tr>
+      <tr><td>1</td><td>India</td><td>125</td></tr>
+      <tr><td>2</td><td>Australia</td><td>122</td></tr>
+      <tr><td>3</td><td>England</td><td>118</td></tr>
+      <tr><td>4</td><td>South Africa</td><td>112</td></tr>
+      <tr><td>5</td><td>Pakistan</td><td>109</td></tr>
+    </table>
+  </section>
+
+  <!-- Top Players -->
+  <section class="history-section">
+    <h2>Top Players</h2>
+    <table class="ranking-table">
+      <tr>
+        <th>Rank</th>
+        <th>Player</th>
+        <th>Country</th>
+        <th>Points</th>
+      </tr>
+      <tr><td>1</td><td>Babar Azam</td><td>Pakistan</td><td>891</td></tr>
+      <tr><td>2</td><td>Shubman Gill</td><td>India</td><td>850</td></tr>
+      <tr><td>3</td><td>Steve Smith</td><td>Australia</td><td>842</td></tr>
+      <tr><td>4</td><td>Joe Root</td><td>England</td><td>833</td></tr>
+      <tr><td>5</td><td>Kane Williamson</td><td>New Zealand</td><td>829</td></tr>
+    </table>
+  </section>
+
+  <!-- Interesting Facts -->
+  <section class="history-section">
+    <h2>Interesting Facts About Cricket</h2>
+    <ul class="facts-list">
+      <li>Cricket was first played in the 16th century in England.</li>
+      <li>Sachin Tendulkar is the only player with 100 international centuries.</li>
+      <li>The longest cricket match lasted 12 days.</li>
+      <li>India won its first World Cup in 1983 under Kapil Dev.</li>
+      <li>MS Dhoni is the only captain to win all three ICC trophies.</li>
+    </ul>
+  </section>
+
+  <!-- Conclusion Image Placeholder -->
+  <section class="history-section">
+    <img src="assets/conclusion.png" alt="Conclusion" class="conclusion-img">
+  </section>
+
+   <div class="footer">
+      <p>&copy; 2025 Sportify. All rights reserved.</p>
+    </div>
+  
+  </footer>
+
+  <script src="cricket.js"></script>
+</body>
+</html>

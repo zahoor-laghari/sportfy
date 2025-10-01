@@ -1,0 +1,265 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+
+  .bgimage {
+    background: url('ContactUsAssets/football-sport-online-on-smartphone-260nw-1865623297\ \(1\).jpg') no-repeat center center/cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #002147;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .logo img {
+    height: 55px;
+    margin-right: 25px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+  }
+  
+  .nav-links li:hover {
+    background-color: #E9A000;
+    border-radius: 8px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #003366;
+    min-width: 200px;
+    z-index: 1;
+  }
+
+  .info {
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+  }
+
+  .info h1 {
+    font-size: 50px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .info p {
+    font-size: 18px;
+    margin: 12px 0;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+
+  .formsec {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    padding: 80px 20px;
+    color: white;
+  
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .left-column {
+    width: 45%;
+    gap: 23px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  input {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+
+  }
+
+input:focus{
+   box-shadow: 0px 0px 15px #b1eff9;
+}
+
+
+
+  textarea {
+    height: 186px;
+    resize: none;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    width: 100%;
+  }
+
+  textarea:focus{
+   box-shadow: 0px 0px 15px #b1eff9;
+}
+
+  .button {
+    background-color: navy;
+    color: white;
+    /* border: 2px solid white; */
+    padding: 15px 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .button:hover{
+    background-color: orange;
+    color: white;
+    box-shadow: 0px 0px 8px orange;
+    /* color: black; */
+    border: 1px solid white;
+    transition: background-color 0.5s ease, color 0.5s ease
+  }
+
+input:hover,
+textarea:hover
+{
+  background-color: #eaeaea;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #002147;
+  padding: 10px 20px;
+  color: white;
+}
+
+.logo img {
+  height: 55px;
+  margin-right: 25px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  display: block;
+}
+
+.nav-links li:hover {
+  background-color: #E9A000;
+  border-radius: 8px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #003366;
+  min-width: 200px;
+  z-index: 1;
+}
+
+/* footer */
+
+footer {
+  background: #021c3f;
+  color: #E9A000;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+  margin-top: 60px;
+}

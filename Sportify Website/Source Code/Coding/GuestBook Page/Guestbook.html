@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="GuestBook.css">
+</head>
+<body>
+      <!-- Navbar Start -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+         <img src="../../LOGO/Sportify.png"></img>
+        
+      </div>
+      <ul class="nav-links">
+        <li><a href="../Index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="../Sports Page/Sports.html">Sports</a>
+        </li>
+        <li><a href="GuestBook.html">Guestbook</a></li>
+        <li><a href="../About Page/About.html">About Us</a></li>
+        <li><a href="../Contact Page/contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Navbar End -->
+  <main class="guestbook-container">
+    <img src="Assets/guestbook page img.png" alt="publicreview banner" class="banner" />
+    <h2>Share Your Thoughts!</h2>
+
+    <form id="guestbookForm">
+      <label for="name">1) Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">2) Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="location">3) Where are you from?</label>
+      <input type="text" id="location" name="location" required />
+
+      <label for="date">4) Date of Visit:</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="favoriteSport">5) What's your favourite sport?</label>
+      <input type="text" id="favoriteSport" name="favoriteSport" />
+
+      <label for="favoritePlayer">6) Who's your favourite sports player?</label>
+      <input type="text" id="favoritePlayer" name="favoritePlayer" />
+
+      <label for="improvement">7) What improvement would you like to see?</label>
+      <textarea id="improvement" name="improvement"></textarea>
+
+      <label>8) Would you recommend this website to others?</label>
+      <div class="radio-group">
+        <div class="radio-option">
+          <input type="radio" id="recommendYes" name="recommend" value="Yes" required />
+          <label for="recommendYes">Yes</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio" id="recommendNo" name="recommend" value="No" />
+          <label for="recommendNo">No</label>
+        </div>
+      </div>
+
+      <label>9) Rate this website:</label>
+      <div class="radio-group">
+        <div class="radio-option">
+          <input type="radio" id="rateExcellent" name="rating" value="Excellent" required />
+          <label for="rateExcellent">Excellent</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio" id="rateGood" name="rating" value="Good" />
+          <label for="rateGood">Good</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio" id="rateAverage" name="rating" value="Average" />
+          <label for="rateAverage">Average</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio" id="ratePoor" name="rating" value="Poor" />
+          <label for="ratePoor">Poor</label>
+        </div>
+      </div>
+
+      <label for="message">10) Comment/Message:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 Sportify Inc. | All Rights Reserved
+  </footer>
+
+  <script src="GuestBook.js"></script>
+</body>
+</html>
